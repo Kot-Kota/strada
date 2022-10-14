@@ -8,8 +8,8 @@
 // let result = calc(a, operator, b)
 
 
-let operator = prompt('Enter operator ( either +, - or * ): ');
 let a = parseFloat(prompt('Enter first number: '));
+let operator = prompt('Enter operator ( either +, - or * ): ');
 let b = parseFloat(prompt('Enter second number: '));
 let result = calc(a, operator, b)
 
@@ -23,4 +23,4 @@ function calc(a, operator, b) {
    return a * b;
  }
 } 
-console.log(`${a} ${operator} ${b} = ${result}`);
+alert(`${a} ${operator} ${b} = ${result}`);
