@@ -1,18 +1,17 @@
-let a = parseFloat(prompt('Enter first number: '));
-let operator = prompt('Enter operator ( either +, - or * ): ');
-let b = parseFloat(prompt('Enter second number: '));
-let result = calc(a, operator, b)
+function calc(operator, a, b){
+   if (operator === "add") {
+    return a+b;
+   } else if (operator === "multi") {
+    return a*b;
+   } else if (operator === "sub") {
+    return a-b;
+   } else {
+    return "Stop operator";
+   }   
+}
+console.log(calc("add", 1, 2,))
+ 
 
-function calc(a, operator, b) {
- if (operator == "+" ) {
-    return a + b;
- }else if (operator == "-") {
-   return a - b;
- }else if (operator == "*") {
-   return a * b;
- }
-} 
-alert(`${a} ${operator} ${b} = ${result}`);
 
 // let firstNumber = parseFloat(prompt('Enter first number: '));
 // let operator = prompt('Enter operator ( either +, - or * ): ');
