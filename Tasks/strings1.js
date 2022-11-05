@@ -23,3 +23,4 @@ function excractCurrencyValue(str) {
     return +str.slice(1);
 }
 alert(excractCurrencyValue('$120') === 120);
+
